@@ -1,0 +1,27 @@
+@import "../../styles/custom.scss";
+
+.main-text-section {
+    margin: 18px 0;
+    .figure {
+        height: 100%;
+        min-height: 250px;
+        padding-bottom: 1rem;
+        @media only screen and (min-width: 1024px) {
+            padding-bottom: 20px;
+            min-height: 400px;
+         }
+    }
+}
+
+.cutted {
+    @media only screen and (max-width: 1024px) {
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;  
+        overflow: hidden;
+    }
+}
+
+.letter-spacing {
+    letter-spacing: .5px;
+}

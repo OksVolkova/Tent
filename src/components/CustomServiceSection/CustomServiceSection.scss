@@ -1,0 +1,29 @@
+@import "../../styles/custom.scss";
+.custom-service-section {
+    padding: 10px 5px;
+    background-color: $white-100;
+    margin-bottom: 1rem;
+    .icon {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 10px;
+        font-size: 1.5rem;
+    }
+    .figure {
+        margin-bottom: 1rem;
+        @media only screen and (min-width: 1024px) {
+            margin: 0;
+        }
+    }
+    .info-text {
+        h2 {
+            letter-spacing: -0.2px;
+        }
+        .icon {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 10px;
+            font-size: 2rem;
+        }
+    }
+}

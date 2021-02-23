@@ -1,0 +1,57 @@
+@import "../../styles/custom.scss";
+
+.card-body {
+    font-size: 14px;
+}
+.carousel-indicators > li {
+    border-radius: 50%;
+}
+.carousel-item {
+    height: 100%;
+    @media only screen and (min-width: 1024px) {
+        min-height: 315px;
+    }
+}
+
+.card-header {
+    margin-bottom: 10px !important;
+    font-size: 1.1rem;
+    cursor: pointer;
+    .icon {
+        transition: all .3s ease-out;  
+    }
+}
+
+.card-header > div {
+     padding: 0.75rem 1rem;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     transition: all 1s ease-out;
+}
+
+.card-header > .show {
+    color: $white-100;
+    background-color: $yellow;
+    // margin-bottom: 10px;
+    .icon {
+        transform: rotate(180deg);
+        cursor: pointer;
+        height: 21px;
+    }
+}
+
+ .card-body {
+    transition: all .3s ease-out;    
+    .show & {
+        margin-bottom: 1rem;
+        margin-top: 10px;
+        @media only screen and (min-width: 1024px) {
+            margin-bottom: 2.5rem;
+        }
+    }
+ }
+
+ .no-padding {
+     padding-bottom: 0;
+ }

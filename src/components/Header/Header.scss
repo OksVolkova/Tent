@@ -1,0 +1,182 @@
+@import "../../styles/custom.scss";
+
+.pre-header {
+    background-color: $gray-300;
+    .list-group{
+        padding-left: 1rem;
+        @media only screen and (max-width: 1024px) {
+            font-size: .5rem;
+        }
+    }
+    .list-group-item {
+        border: none;
+        background-color: transparent;
+        text-transform: uppercase;
+        padding: .5rem 0;
+        letter-spacing: -0.3px;
+        margin-right: 1rem;
+    }
+    .tel {
+        text-transform: uppercase;
+        a {
+            color: $black;
+            transition: opacity 3s;
+            display: inline-block;
+            margin-left: 3px;
+            font-weight: bold;
+            letter-spacing: 0.25px;
+            &:hover {
+                text-decoration: none;
+                color: $primary;
+            }
+        }
+    }
+    .icon {
+        margin-right: 5px;
+        font-weight: bolder;
+    }
+}
+
+.header {
+    background-color: $primary;
+    padding: 1rem 0;
+    @media only screen and (min-width: 768px) {
+        padding: 1rem 0 .5rem;
+    }
+    @media only screen and (min-width: 1024px) {
+        padding: 2.25rem 0 0;
+    }
+    .bottom-margin {
+         @media only screen and (mix-width: 1024px) {
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+.search-form {
+    position: relative;
+    width: 100%;
+    .form-control {
+         border-radius: 0 0.25rem 0.25rem 0;
+    }
+    .btn {
+        position: absolute;
+        right: 0;
+        transform: translateY(-50%);
+        top: 50%;
+        box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.75);
+    }
+}
+
+.basket a {
+    color: $white;
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-end;
+    &:hover {
+        color: $white;
+        text-decoration: none;
+        opacity: 0.5;
+        .shopping-cart {
+            transform: scale(1) translateX(30px);
+        }
+    }
+}
+
+.price {
+    margin-top: -3px;
+    font-size: 12px;
+    justify-content: flex-end;
+}
+
+.basket-price {
+    margin-right: 5px;
+    small {
+        font-size: 10px;
+    }
+}
+
+.shopping-cart {
+    display: block;
+    color: $white;
+    text-decoration: none;
+    transition: opacity .15s ease-in-out, transform 1s;
+    font-size: 2rem;
+    &:hover,
+    &:focus,
+    &:active {
+        color: $white;
+        opacity: 0.5;
+        text-decoration: none;
+    }
+}
+
+.header-inner {
+    @media only screen and (max-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+        position: static;
+       
+    }
+    .holder {
+        @media only screen and (max-width: 768px) {
+            height: 50px;
+            max-width: 70%;
+            width: 100%;
+        }
+    }
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    font-size: 1rem;
+
+    letter-spacing: -0.9px;
+     @media only screen and (min-width: 768px) {
+        font-size: 0.75rem;
+    }
+    @media only screen and (min-width: 1200px) {
+        font-size: 1rem;
+        letter-spacing: -0.5px;
+        margin-right: 14px;
+    }
+}
+
+.navbar {
+    position: static !important;
+    justify-content: flex-end !important;
+}
+
+.navbar-nav {
+    align-items: center;
+}
+
+.navbar-toggler {
+    z-index: 1000;
+}
+
+.navbar-collapse {
+    text-align: center;
+    
+    @media only screen and (max-width: 568px) {
+         transform: translateX(-79%);
+    }
+    @media only screen and (max-width: 768px) {
+        transform: translateX(-96%);
+    }
+
+
+    
+}
+
+.nav-holder {
+    margin-right: 5px;
+}
+
+.dropdown {
+    @media only screen and (max-width: 768px) {
+        display: none;
+    }
+}
+
+
+

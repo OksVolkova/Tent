@@ -1,0 +1,115 @@
+@import "../../styles/custom.scss";
+
+.comparation-item {
+    position: relative;
+     border-right: 3px solid $white-100;
+     margin-bottom: 1rem;
+     &:first-child {
+        border-left: 3px solid $white-100;
+        .comparation-item-footer {
+            bottom: 20px;
+        }
+    }
+    &:last-child {
+        .comparation-item-footer {
+            bottom: 38px;
+        }
+    }
+    @media only screen and (min-width: 1024px) {
+        min-height: 575px;
+        max-height: 575px;
+        height: 100%;
+        margin-bottom: 0;
+    }
+
+     figure {
+            min-height: 170px;
+            height: 100%;
+            max-height: 170px;
+            width: 100%;
+            margin: 0 auto 1.75rem;
+            img {
+                width: 100%;
+            }
+    }
+    h3 {
+        text-transform: capitalize;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    h5 {
+        font-weight: bold;
+        padding-bottom: 10px;
+        margin-bottom: 6px;
+        position: relative;
+         &:after {
+            content: "";
+            display: block;
+            width: 30px;
+            height: 3px;
+            background-color: white;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+     }
+}
+
+.whithout-marker   {
+    margin-bottom: 20px;
+    &:after {
+        display: none !important;
+    }
+ }
+
+ .comparation-item-holder {
+     
+     @media only screen and (min-width: 1024px) {
+        margin: 0 0 30px;
+     }
+ }
+
+.description-list {
+    ul {
+        padding-left: 5px;
+    }
+    li {
+        letter-spacing: -0.2px;
+        margin-bottom: 4px;
+    }
+    .icon {
+        font-size: .75rem;
+        color: $green;
+        margin-right: 5px;
+    }
+}
+
+.comparation-link {
+    color: $green;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    transition: opacity 3s ease;
+    // animation: slide1 1s ease-in-out infinite;
+    &:hover,
+    &:active,
+    &:focus {
+        color: $green;
+        opacity: .5;
+
+    }
+    span {
+        font-weight: 600;
+        display: block;
+        margin-bottom: -2px;
+    }
+}
+
+.comparation-item-footer {
+     @media only screen and (min-width: 1024px) {
+            position: absolute;
+            bottom: 15px;
+            left: 0;
+            right: 0;
+     }
+}

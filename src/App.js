@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import AccordionSection from './components/AccordionSection/AccordionSection';
+import AccordionFaqSection from './components/AccordionSection/AccordionFaqSection';
+import ComparationSection from './components/ComparationSection/ComparationSection';
+import Header from "./components/Header/Header";
+import HeroSection from "./components/HeroSection/HeroSection";
+import MainInfoSection from './components/MainInfoSection/MainInfoSection';
+import MainInfoSectionReverse from "./components/MainInfoSection/MainInfoSectionReverse";
+import CustomServiceSection from './components/CustomServiceSection/CustomServiceSection';
+import Footer from"./components/Footer/Footer";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+const App = () => (
+    <div className="wrapper">
+            <Header></Header> {/*Page heading */}
+            <HeroSection></HeroSection>{/*Hero banner*/}
+            <ComparationSection></ComparationSection>{/*Section with main material items */}
+            <MainInfoSection></MainInfoSection>{/*Article with main information */}
+            <MainInfoSectionReverse></MainInfoSectionReverse>{/*Article with main information */}
+            <AccordionSection></AccordionSection>{/*Article with main information */}
+            <AccordionFaqSection></AccordionFaqSection>{/*Article with FQA information */}
+            <CustomServiceSection></CustomServiceSection>{/*Article with service information */}
+            <Footer></Footer> {/*page footer */}
     </div>
-  );
-}
+
+);
 
 export default App;
