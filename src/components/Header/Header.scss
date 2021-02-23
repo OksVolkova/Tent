@@ -112,14 +112,14 @@
 }
 
 .header-inner {
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 767px) {
         display: flex;
         justify-content: space-between;
         position: static;
        
     }
     .holder {
-        @media only screen and (max-width: 768px) {
+        @media only screen and (max-width: 767px) {
             height: 50px;
             max-width: 70%;
             width: 100%;
@@ -129,7 +129,6 @@
 
 .navbar-dark .navbar-nav .nav-link {
     font-size: 1rem;
-
     letter-spacing: -0.9px;
      @media only screen and (min-width: 768px) {
         font-size: 0.75rem;
@@ -160,12 +159,9 @@
     @media only screen and (max-width: 568px) {
          transform: translateX(-79%);
     }
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 767px) {
         transform: translateX(-96%);
     }
-
-
-    
 }
 
 .nav-holder {
@@ -173,7 +169,7 @@
 }
 
 .dropdown {
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 767px) {
         display: none;
     }
 }
