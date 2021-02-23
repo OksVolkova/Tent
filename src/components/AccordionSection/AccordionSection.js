@@ -13,7 +13,6 @@ import { useAccordionToggle } from 'react-bootstrap/AccordionToggle';
 import  "./AccordionSection.scss";
 import "../../styles/fonts.scss";
 
-
 function ContextAwareToggle({  eventKey, callback }) {
     const currentEventKey = useContext(AccordionContext);
     const text1 = "Waterproof marquees";

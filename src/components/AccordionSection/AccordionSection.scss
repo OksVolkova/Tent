@@ -3,6 +3,7 @@
 .card-body {
     font-size: 14px;
 }
+
 .carousel-indicators > li {
     border-radius: 50%;
 }
@@ -33,7 +34,6 @@
 .card-header > .show {
     color: $white-100;
     background-color: $yellow;
-    // margin-bottom: 10px;
     .icon {
         transform: rotate(180deg);
         cursor: pointer;
@@ -50,10 +50,6 @@
             margin-bottom: 2.5rem;
         }
     }
- }
-
- .no-padding {
-     padding-bottom: 0;
  }
 
  .carousel-indicators {

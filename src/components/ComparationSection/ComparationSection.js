@@ -8,7 +8,6 @@ import ComItem2 from "../../images/gazebo-roof-polyester.jpg"
 import ComItem3 from "../../images/gazebo-roof-pvc.jpg"
 import ComItem4 from "../../images/gazebo-roof-pe.jpg"
 
-
 import  "./ComparationSection.scss";
 import "../../styles/fonts.scss";
 
@@ -182,4 +181,5 @@ function ComparationSection ( ) {
             </div>
     )
 }
+
 export default ComparationSection;
